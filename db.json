@@ -1,0 +1,25 @@
+{
+  "restaurants": [
+    {
+      "id": "2",
+      "name": "Restaurant Two",
+      "description": "Great ambiance",
+      "location": "Downtown",
+      "image": "https://via.placeholder.com/300x200.png?text=Restaurant+Two"
+    },
+    {
+      "id": "278a",
+      "name": "Restaurant One",
+      "description": "Italian",
+      "location": "Uptown",
+      "image": "https://via.placeholder.com/300x200.png?text=Restaurant+One"
+    },
+    {
+      "id": "092d",
+      "name": "Restaurant Three",
+      "description": "Chinese",
+      "location": "Downtown",
+      "image": "https://via.placeholder.com/300x200.png?text=Restaurant+Three"
+    }
+  ]
+}
