@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 const ConfirmationModal = ({ isOpen, onRequestClose, onConfirm, message }) => {
   return (
@@ -12,7 +12,7 @@ const ConfirmationModal = ({ isOpen, onRequestClose, onConfirm, message }) => {
             <Button type="button" variant="secondary" onClick={onRequestClose}>
               No
             </Button>
-            <Button type="button" variant="danger" onClick={onConfirm}>
+            <Button type="button" variant="destructive" onClick={onConfirm}>
               Yes
             </Button>
           </div>

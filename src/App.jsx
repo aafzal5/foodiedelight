@@ -1,9 +1,14 @@
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button'
-import { getRestaurants, addRestaurant, updateRestaurant, deleteRestaurant } from '@/api/restaurantApi';
-import RestaurantItem from '@/components/RestaurantItem';
-import RestaurantFormModal from '@/components/RestaurantFormModal';
-import ConfirmationModal from '@/components/ConfirmationModal';
+import {
+  addRestaurant,
+  deleteRestaurant,
+  getRestaurants,
+  updateRestaurant,
+} from "@/api/restaurantApi";
+import ConfirmationModal from "@/components/ConfirmationModal";
+import RestaurantFormModal from "@/components/RestaurantFormModal";
+import RestaurantItem from "@/components/RestaurantItem";
+import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const App = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -57,8 +62,8 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <header className="flex justify-between items-center p-4 bg-white shadow-md mb-4">
-        <h1 className="text-xl font-bold">Restaurant Manager</h1>
-        <Button variant="primary" onClick={handleAddRestaurant}>
+        <h1 className="text-xl font-bold">Food Delight</h1>
+        <Button variant="secondary" onClick={handleAddRestaurant}>
           Add Restaurant
         </Button>
       </header>
